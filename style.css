@@ -8,12 +8,6 @@ body {
   justify-content: center; /* Centra horizontalmente los elementos en el cuerpo */
 }
 
-audio {
-  width: 100%;
-  max-width: 300px; /* Establece el ancho máximo del reproductor */
-  margin: 0 auto; /* Centra el reproductor en la página */
-}
-
 .flower {
   height: 200px;
   width: 200px;
@@ -150,4 +144,16 @@ audio {
   }
   .Petal3.p4 {
     transform: rotate(157.5deg);
+  }
+  
+  #reproductor {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin-top: 20px; /* Agrega un espacio desde el div principal */
+  }
+  
+  audio {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 300px; /* Establece el ancho máximo del reproductor */
   }
