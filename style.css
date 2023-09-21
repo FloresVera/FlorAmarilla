@@ -7,6 +7,13 @@ body {
   align-items: center; /* Centra verticalmente los elementos en el cuerpo */
   justify-content: center; /* Centra horizontalmente los elementos en el cuerpo */
 }
+
+audio {
+  width: 100%;
+  max-width: 300px; /* Establece el ancho máximo del reproductor */
+  margin: 0 auto; /* Centra el reproductor en la página */
+}
+
 .flower {
   height: 200px;
   width: 200px;
