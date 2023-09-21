@@ -41,17 +41,27 @@
     </div>
     <div class="text-below">Para Ceci mi vida. Te amo</div>
 
-    <div id="reproductor">
-      <audio autoplay loop>
-      <source src="assets/music/y2mate.com - Floricienta  Flores Amarillas Letra.mp3" type="audio/mpeg">
-      Tu navegador no soporta la reproducción de audio.
-    </audio>
-    </div>
-
   </div>
 
-  
-  
+  <audio id="myAudio" loop>
+    <source src="assets/music/y2mate.com - Floricienta  Flores Amarillas Letra.mp3" type="audio/mpeg">
+    Tu navegador no soporta la reproducción de audio.
+  </audio>
+
+  <script>
+    // Función para mostrar un mensaje con música de fondo
+    function mostrarMensajeConMusica() {
+      alert("¡Hola mi amor! Dale en aceptar para disfrutar de tu flor amarilla con música de fondo. Te amo preciosa.");
+      var audio = document.getElementById("myAudio");
+      audio.play();
+    }
+
+    // Mostrar el mensaje automáticamente cuando la página haya cargado completamente
+    document.addEventListener("DOMContentLoaded", function () {
+      mostrarMensajeConMusica();
+    });
+  </script>
+
 </body>
 
 </html>
